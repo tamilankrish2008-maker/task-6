@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pricing Table</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 40px;
+    }
+
+    .pricing-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .plan {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        text-align: center;
+        width: 250px;
+        transition: 0.3s;
+    }
+
+    .plan:hover {
+        transform: translateY(-5px);
+    }
+
+    .highlight {
+        background-color: #af4c6a;
+        color: white;
+        transform: scale(1.05);
+    }
+
+    .price {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 15px 0;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        margin: 10px 0;
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 10px 20px;
+        text-decoration: none;
+        background: pink;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .highlight .btn {
+        background: white;
+        color: #4CAF50;
+    }
+</style>
+</head>
+<body>
+
+<div class="pricing-container">
+
+    <div class="plan highlight">
+        <h2>Basic</h2>
+        <div class="price">349$/mo</div>
+        <ul>
+            <li>5 Projects</li>
+            <li>100 GB Storage</li>
+            <li>Email Support</li>
+        </ul>
+        <a href="#" class="btn">Choose Plan</a>
+    </div>
+
+    <div class="plan ">
+        <h2>Pro</h2>
+        <div class="price">49$/mo</div>
+        <ul>
+            <li>50 Projects</li>
+            <li>100 GB Storage</li>
+            <li>Priority Support</li>
+        </ul>
+        <a href="#" class="btn">Choose Plan</a>
+    </div>
+
+    <div class="plan">
+        <h2>Premium</h2>
+        <div class="price">11$/mo</div>
+        <ul>
+            <li>Unlimited Projects</li>
+            <li>1 TB Storage</li>
+            <li>24/7 Support</li>
+        </ul>
+        <a href="#" class="btn">Choose Plan</a>
+    </div>
+
+</div>
+
+</body>
+</html>
